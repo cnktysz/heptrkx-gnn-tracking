@@ -92,7 +92,7 @@ def plot_cylindrical(filenames,n_section):
 def plot_cartesian(filenames,n_section,n_files):
         fig, ax = plt.subplots()
         cmap = plt.get_cmap('bwr_r')
-        theta_counter = 0#np.pi/n_section # start 45 degree rotated
+        theta_counter = np.pi/n_section # start rotated
         for i in range(n_files):
             print('Plotting file: ' + filenames[i*2])
             X, Ri, Ro, y = load_graph(filenames[i*2])
@@ -246,10 +246,10 @@ def main():
                 if f.startswith('event') and f.endswith('.npz')])
     filenames[:n_files] if n_files is not None else filenames
     
-    plot_3d(filenames,n_section,n_files)
+    #plot_3d(filenames,n_section,n_files)
     plot_cartesian(filenames,n_section,1)
-    plot_cylindrical(filenames,n_section)
-    plot_combined(filenames,n_section)
+    #plot_cylindrical(filenames,n_section)
+    #plot_combined(filenames,n_section)
 
 if __name__ == '__main__':
     pdf_dir = 'pdf/graphs/'
