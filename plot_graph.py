@@ -90,7 +90,7 @@ def plot_cylindrical(filenames,n_section):
     
 
 def plot_cartesian(filenames,n_section,n_files):
-        fig, ax = plt.subplots()
+        fig, ax = plt.subplots(figsize=(8,8))
         cmap = plt.get_cmap('bwr_r')
         theta_counter = np.pi/n_section # start rotated
         for i in range(n_files):
