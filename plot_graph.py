@@ -238,7 +238,7 @@ def plot_combined(filenames,n_section):
     
 
 def main():
-    input_dir = '/home/ctuysuz/data/trackml/hitgraphs_small/'
+    input_dir = '/home/ctuysuz/data/trackml/hitgraphs_mini/'
     n_section = 4
     n_files = 1
    
@@ -247,10 +247,10 @@ def main():
                 if f.startswith('event') and f.endswith('.npz')])
     filenames[:n_files] if n_files is not None else filenames
     
-    #plot_3d(filenames,n_section,n_files)
+    plot_3d(filenames,n_section,n_files)
     plot_cartesian(filenames,n_section,1)
-    #plot_cylindrical(filenames,n_section)
-    #plot_combined(filenames,n_section)
+    plot_cylindrical(filenames,n_section)
+    plot_combined(filenames,n_section)
 
 if __name__ == '__main__':
     pdf_dir = 'pdf/graphs/'
