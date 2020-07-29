@@ -1,0 +1,13 @@
+# Input/output configuration
+input_dir: /home/ctuysuz/data/trackml/train_100_events
+output_dir: /home/ctuysuz/data/trackml/hitgraphs_small/hitgraphs_small_000
+n_files: 100
+
+# Graph building configuration
+selection:
+    pt_min: 1 # GeV
+    phi_slope_max: 0.001
+    z0_max: 200
+    n_phi_sections: 4
+    n_eta_sections: 1
+    eta_range: [-5, 5]
