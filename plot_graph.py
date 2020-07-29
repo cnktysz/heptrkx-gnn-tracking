@@ -119,7 +119,8 @@ def plot_cartesian(filenames,n_section,n_files):
             theta_counter += 2*np.pi/n_section
             theta_counter = theta_counter%(np.pi*2)
 
-        ax.set_xlabel('x [mm]')
+        ax.set_aspect('equal')
+       	ax.set_xlabel('x [mm]')
         ax.set_ylabel('y [mm]')
         #ax1.set_xlabel('$x [mm]$')
         #ax1.set_ylabel('$z [mm]$')
