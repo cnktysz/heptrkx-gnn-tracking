@@ -238,7 +238,7 @@ def plot_combined(filenames,n_section):
 
 def main():
     input_dir = '/home/ctuysuz/data/trackml/hitgraphs_small/'
-    n_section = 8
+    n_section = 4
     n_files = 1
    
     input_dir = os.path.expandvars(input_dir)
