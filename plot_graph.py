@@ -246,9 +246,9 @@ def main():
                 if f.startswith('event') and f.endswith('.npz')])
     filenames[:n_files] if n_files is not None else filenames
     
-    #plot_3d(filenames,n_section,n_files)
-    #plot_cartesian(filenames,n_section,1)
-    #plot_cylindrical(filenames,n_section)
+    plot_3d(filenames,n_section,n_files)
+    plot_cartesian(filenames,n_section,1)
+    plot_cylindrical(filenames,n_section)
     plot_combined(filenames,n_section)
 
 if __name__ == '__main__':
